@@ -1,0 +1,98 @@
+@layer base {
+	/**
+   * Set up base styles here.
+   * Use this to normalize default browser styles.
+   */
+	* {
+		box-sizing: border-box;
+		outline: 0;
+		border: 0;
+		padding: 0;
+		margin: 0;
+
+		font: inherit;
+		color: inherit;
+		line-height: 1;
+
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	*::after,
+	*::before {
+		box-sizing: inherit;
+	}
+
+	html {
+		font-family: system-ui;
+		font-weight: 400;
+		color: theme("colors.carbon");
+
+		scroll-behavior: smooth;
+	}
+
+	header {
+		padding-inline: 1.25rem;
+
+		background: #0c1721;
+	}
+
+	form {
+		display: grid;
+		gap: 1.5rem;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 700;
+		text-wrap: balance;
+		line-height: 1.2;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+
+		@media (width >= 480px) {
+			font-size: 2rem;
+		}
+	}
+
+	h2 {
+		font-size: 1.25rem;
+
+		@media (width >= 480px) {
+			font-size: 1.75rem;
+		}
+	}
+
+	h3 {
+		font-size: 1.125rem;
+
+		@media (width >= 480px) {
+			font-size: 1.5rem;
+		}
+	}
+
+	p {
+		text-wrap: pretty;
+		line-height: 1.4;
+	}
+
+	label {
+		user-select: none;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+
+		user-select: none;
+	}
+}
