@@ -1,8 +1,4 @@
 @layer base {
-	/**
-   * Set up base styles here.
-   * Use this to normalize default browser styles.
-   */
 	* {
 		box-sizing: border-box;
 		outline: 0;

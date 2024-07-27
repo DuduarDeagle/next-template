@@ -18,8 +18,8 @@ interface Props {
 	children: React.ReactNode
 }
 
-/* Set up the layout */
-const Layout: React.FC<Props> = ({ children }) => (
+/* Set up the root layout */
+const RootLayout: React.FC<Props> = ({ children }) => (
 	<html lang="es-419">
 		<head>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,4 +34,4 @@ const Layout: React.FC<Props> = ({ children }) => (
 	</html>
 )
 
-export default Layout
+export default RootLayout
